@@ -6,7 +6,7 @@
 # https://github.com/Lin-Buo-Ren/common-precommit-config-template
 #
 # Copyright 2026 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
-# SPDX-License-Identifier: CC-BY-SA-4.0
+# SPDX-License-Identifier: {{ cookiecutter.project_license_spdx_identifier }}
 
 repos:
   # Some out-of-the-box hooks for pre-commit
@@ -42,6 +42,13 @@ repos:
     rev: v0.34.0
     hooks:
       - id: markdownlint
+
+  # Check REUSE compliance
+  # https://reuse.software/
+  - repo: https://codeberg.org/fsfe/reuse-tool.git
+    rev: v6.2.0
+    hooks:
+      - id: reuse
 
   # Check shell scripts with ShellCheck
   # NOTE: ShellCheck must be available in the command search PATHs

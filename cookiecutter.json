@@ -1,0 +1,15 @@
+{
+    "project_name": "Unnamed project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_summary": "(A brief description of the project)",
+    "author": "Unknown",
+    "gitlab_username": "_namespace_",
+    "gitlab_repo_owner": "{{ cookiecutter.username }}",
+    "github_repo_owner": "{{ cookiecutter.gitlab_repo_owner }}",
+    "project_license_version": "default",
+    "project_license_name": "Creative Commons Attributions-SharedAlike",
+    "project_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "project_copyright_year": "2026",
+    "project_copyright_holder_identity": "林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>",
+    "project_license_spdx_identifier": "CC-BY-SA-4.0+"
+}
