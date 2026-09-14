@@ -11,5 +11,8 @@
     "project_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "project_copyright_year": "2026",
     "project_copyright_holder_identity": "林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>",
-    "project_license_spdx_identifier": "CC-BY-SA-4.0+"
+    "project_license_spdx_identifier": "CC-BY-SA-4.0+",
+    "_jinja2_env_vars": {
+        "comment_start_string": "{##########DISABLED#########"
+    }
 }
