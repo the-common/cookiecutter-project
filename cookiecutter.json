@@ -4,7 +4,7 @@
     "project_summary": "(A brief description of the project)",
     "author": "Unknown",
     "gitlab_username": "_namespace_",
-    "gitlab_repo_owner": "{{ cookiecutter.username }}",
+    "gitlab_repo_owner": "{{ cookiecutter.gitlab_username }}",
     "github_repo_owner": "{{ cookiecutter.gitlab_repo_owner }}",
     "project_license_version": "default",
     "project_license_name": "Creative Commons Attributions-SharedAlike",
