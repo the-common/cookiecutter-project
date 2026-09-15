@@ -21,6 +21,10 @@ repos:
       - id: check-symlinks
       - id: check-vcs-permalinks
       - id: check-yaml
+        exclude: |
+          (?ix)^(
+            \{\{\ cookiecutter\.project_slug\ \}\}/\.github/workflows/.*
+          )$
       - id: detect-aws-credentials
         args:
           - --allow-missing-credentials
@@ -58,6 +62,10 @@ repos:
     rev: v1.30.0
     hooks:
       - id: yamllint
+        exclude: |
+          (?ix)^(
+            \{\{\ cookiecutter\.project_slug\ \}\}/\.github/workflows/.*
+          )$
 
   # Check EditorConfig style compliance
   # https://github.com/editorconfig-checker/editorconfig-checker.python

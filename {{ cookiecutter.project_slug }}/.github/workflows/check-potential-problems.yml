@@ -7,6 +7,7 @@
 #
 # Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: {{ cookiecutter.project_license_spdx_identifier }}
+{% raw -%}
 name: Check potential problems in the project
 on:
   push:
@@ -64,3 +65,4 @@ jobs:
           chat: ${{ vars.telegram_chat_id_ci }}
           token: ${{ secrets.telegram_bot_api_token_ci }}
           status: ${{ job.status }}
+{% endraw -%}

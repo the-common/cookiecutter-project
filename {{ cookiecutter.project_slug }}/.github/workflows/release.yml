@@ -7,6 +7,7 @@
 #
 # Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: {{ cookiecutter.project_license_spdx_identifier }}
+{% raw -%}
 name: Release product and their build artifacts
 on:
   push:
@@ -89,3 +90,4 @@ jobs:
           files: |
             ${{ env.release_id }}.tar*
           body_path: .detailed_changes
+{% endraw -%}
