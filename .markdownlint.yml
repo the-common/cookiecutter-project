@@ -50,3 +50,6 @@ first-line-h1:
 table:
   aligned_delimiter: False
   style: compact
+
+# Avoid false-positives due to the usage of Jinja template variables
+no-bare-urls: False
