@@ -112,9 +112,7 @@ fi
 
 runtime_dependency_pkgs=(
     # project archive compression dependencies
-    #bzip2
-    gzip
-    #xz
+    zip
 
     git
 

@@ -118,7 +118,7 @@ git_archive_all_opts=(
 if ! \
     git-archive-all \
         "${git_archive_all_opts[@]}" \
-        "${release_id}.tar.gz"; then
+        "${release_id}.zip"; then
     printf \
         'Error: Unable to generate the project archive.\n' \
         1>&2
