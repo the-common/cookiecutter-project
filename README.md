@@ -1,4 +1,4 @@
-# cookiecutter-project
+# The common project template with Cookiecutter support
 
 A common project template to start of, batteries included and Cookiecutter-compatible.
 
