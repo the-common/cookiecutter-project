@@ -5,6 +5,61 @@ A common project template to start of, batteries included and Cookiecutter-compa
 <https://gitlab.com/the-common/cookiecutter-project>  
 [![The GitLab CI pipeline status badge of the project's `main` branch](https://gitlab.com/the-common/cookiecutter-project/badges/main/pipeline.svg?ignore_skipped=true "Click here to check out the comprehensive status of the GitLab CI pipelines")](https://gitlab.com/the-common/cookiecutter-project/-/pipelines) [![GitHub Actions workflow status badge](https://github.com/the-common/cookiecutter-project/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions workflow status")](https://github.com/the-common/cookiecutter-project/actions/workflows/check-potential-problems.yml) [![pre-commit enabled badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "This project uses pre-commit to check potential problems")](https://pre-commit.com/) [![REUSE Specification compliance badge](https://api.reuse.software/badge/gitlab.com/the-common/cookiecutter-project "This project complies to the REUSE specification to decrease software licensing costs")](https://api.reuse.software/info/gitlab.com/the-common/cookiecutter-project)
 
+## Usage
+
+Information on how to use this product:
+
+### Prerequisites
+
+Before using this product, ensure you have the following prerequisites installed:
+
+* [Cookiecutter](https://github.com/cookiecutter/cookiecutter)  
+  For generating the project from template.
+* [Git](https://git-scm.com/)  
+  For downloading the project template.
+* (OPTIONAL) [Project initializer](https://gitlab.com/brlin/project-initializer)  
+  Only needed if you want to automate GitLab and GitHub project setup.
+
+### Usage instructions
+
+To use this project template, follow these steps:
+
+1. Launch a text terminal.
+1. Run the following command to switch the working directory to your desired location to place the project:
+
+    ```bash
+    cd /path/to/your/desired/location
+    ```
+
+   Replace `/path/to/your/desired/location` with the actual path to the directory where you want to create the new project.
+1. Run the following command to generate a new project from the template:
+
+    ```bash
+    cookiecutter https://gitlab.com/the-common/cookiecutter-project.git
+    ```
+
+   Follow the prompts to enter the required information for your new project.
+1. Navigate to the newly created project directory:
+
+    ```bash
+    cd your_project_slug
+    ```
+
+   Replace `your_project_slug` with the actual slug of your new project.
+1. (OPTIONAL) Run the following command to initialize the Git repository:
+
+    ```bash
+    git init
+    ```
+
+1. (OPTIONAL) Run the following command to automate the repository setup using the project initializer:
+
+    ```bash
+    project-initializer
+    ```
+
+1. Start hacking!
+
 ## Licensing
 
 Unless otherwise noted([comment headers](https://reuse.software/spec-3.3/#comment-headers)/[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)), this product is licensed under [the 4.0 International version of the Creative Commons Attribution-SharedAlike license](https://creativecommons.org/licenses/by-sa/4.0/), or any of its more recent versions of your preference.
