@@ -87,5 +87,5 @@ jobs:
         with:
           name: ${{ env.project_id }} ${{ env.release_version }}
           files: |
-            ${{ env.release_id }}.tar*
+            ${{ env.release_id }}.zip
           body_path: .detailed_changes
