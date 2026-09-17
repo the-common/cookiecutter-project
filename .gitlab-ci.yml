@@ -43,7 +43,7 @@ generate-build-artifacts:
   image: ubuntu:22.04
   artifacts:
     paths:
-      - ${CI_PROJECT_NAME}-*.tar*
+      - ${CI_PROJECT_NAME}-*.zip
   script:
     - ./continuous-integration/generate-build-artifacts.install-system-deps.sh
     - ./continuous-integration/generate-build-artifacts.sh
