@@ -35,7 +35,7 @@ To use this project template, follow these steps:
 1. Run the following command to generate a new project from the template:
 
     ```bash
-    cookiecutter https://gitlab.com/the-common/cookiecutter-project.git
+    cookiecutter gl:the-common/cookiecutter-project
     ```
 
    Follow the prompts to enter the required information for your new project.
@@ -59,6 +59,13 @@ To use this project template, follow these steps:
     ```
 
 1. Start hacking!
+
+## References
+
+The following materials are referenced during the development of this product:
+
+* [Usage — cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html)  
+  Provide information regarding the abbreviation of GitLab-hosted repo templates.
 
 ## Licensing
 
