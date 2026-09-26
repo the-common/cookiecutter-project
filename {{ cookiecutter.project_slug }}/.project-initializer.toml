@@ -1,0 +1,33 @@
+# Example project-initializer configuration
+#
+# Copy this file to .project-initializer.toml and fill in non-secret defaults.
+#
+# Copyright 2026 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+[project]
+identifier = "{{ cookiecutter.project_slug }}"
+display_name = "{{ cookiecutter.project_name }}"
+description = "{{ cookiecutter.project_summary }}"
+topics = [
+{%- set tags = cookiecutter.project_tags.split(',') %}
+{%- for tag in tags %}
+    "{{ tag }}",
+{%- endfor %}
+]
+
+[gitlab]
+url = "https://gitlab.com"
+# namespace = "example-namespace"
+# token = "glpat-..."
+
+[github]
+api_url = "https://api.github.com"
+# organization = "example-organization"
+# token = "github_pat_..."
+# mirror_pat = "github_pat_..."
+
+# Optional: remove this table to skip Telegram integration.
+[telegram]
+chat_id = "@example_channel"
+# bot_token = "123456:ABCDEF..."

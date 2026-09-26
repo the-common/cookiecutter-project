@@ -2,6 +2,7 @@
     "project_name": "Unnamed project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "project_summary": "(A brief description of the project)",
+    "project_tags": "apple,lemon,orange",
     "author": "Unknown",
     "gitlab_username": "_namespace_",
     "gitlab_repo_owner": "{{ cookiecutter.gitlab_username }}",
