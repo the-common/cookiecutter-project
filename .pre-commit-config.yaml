@@ -24,6 +24,7 @@ repos:
         exclude: |
           (?ix)^(
             \{\{\ cookiecutter\.project_slug\ \}\}/\.github/workflows/.*
+            |\{\{\ cookiecutter\.project_slug\ \}\}/compose\.yml
           )$
       - id: detect-aws-credentials
         args:
@@ -75,6 +76,7 @@ repos:
         exclude: |
           (?ix)^(
             \{\{\ cookiecutter\.project_slug\ \}\}/\.github/workflows/.*
+            |\{\{\ cookiecutter\.project_slug\ \}\}/compose\.yml
           )$
 
   # Check EditorConfig style compliance

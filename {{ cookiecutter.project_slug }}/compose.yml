@@ -7,12 +7,12 @@
 #
 # Copyright 2026 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: {{ cookiecutter.project_license_spdx_identifier }}
-name: project-name
+name: {{ cookiecutter.project_slug }}
 services:
   # Environment for testing the project
   test-environment:
-    container_name: project-name-test
-    hostname: project-name-test
+    container_name: {{ cookiecutter.project_slug }}-test
+    hostname: {{ cookiecutter.project_slug }}-test
     image: ubuntu:24.04
     volumes:
       - type: bind
