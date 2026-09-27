@@ -96,4 +96,4 @@
 /continuous-integration/venv/
 
 # Don't track unpacked product files
-/project-name-*/
+/cookiecutter-project-*/
