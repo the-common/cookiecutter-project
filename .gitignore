@@ -97,3 +97,6 @@
 
 # Don't track unpacked product files
 /cookiecutter-project-*/
+
+# Don't track instantiated template directories for testing
+/unnamed-project/
